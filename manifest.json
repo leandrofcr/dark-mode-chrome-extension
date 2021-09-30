@@ -1,0 +1,23 @@
+{
+  "name": "Trybe Course Dark Mode",
+  "description": "Go from Light Mode to Dark Mode and vice verse",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "background": {
+    "script": [
+      "background.js"
+    ],
+    "persisten": true
+  },
+  "browser_action": {
+    "default_title": "Trybe Course Dark Mode",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "https://*.betrybe.com/*",
+    "http://*.betrybe.com/*",
+    "tabs",
+    "storage",
+    "management"
+  ]
+ }
