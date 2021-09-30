@@ -14,8 +14,8 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "https://*.betrybe.com/*",
-    "http://*.betrybe.com/*",
+    "https://*.betrybe.com/course/*",
+    "http://*.betrybe.com/course/*",
     "tabs",
     "storage",
     "management"
