@@ -4,18 +4,16 @@
   "version": "1.0.0",
   "manifest_version": 2,
   "background": {
-    "script": [
-      "background.js"
-    ],
-    "persisten": true
+    "scripts": ["popup.js"],
+    "persistent": true
   },
   "browser_action": {
     "default_title": "Trybe Course Dark Mode",
     "default_popup": "popup.html"
   },
   "permissions": [
-    "https://*.betrybe.com/course/*",
-    "http://*.betrybe.com/course/*",
+    "https://*/*",
+    "http://*/*",
     "tabs",
     "storage",
     "management"

@@ -1,21 +1,18 @@
-const previewState = () => {
   const getState = localStorage.getItem('darkMode');
   const isAppOn = getState === 'on'
 
+console.log(isAppOn)
+
   if(isAppOn) {
-    chrome.tabs.executeScript({
-      file: "appOn.js"
+    document.querySelector("html").style.filter = "invert(1) hue-rotate(180deg)";
+  
+    const media = document.querySelectorAll("img, picture, figure video, .block-code, .player");
+  
+    media.forEach((el) => {
+      el.style.filter = "invert(1) hue-rotate(180deg)";
     });
   }
-}
 
-previewState();
-
-chrome.tabs.onUpdated.addListener(( _tabId, _info, tab ) => {
-  chrome.tabs.executeScript({
-    file: "background.js"
-  });
-});
 
 if(document.querySelector(".popup")){
   const getState = localStorage.getItem('darkMode');
