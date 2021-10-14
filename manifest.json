@@ -12,8 +12,8 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "https://*/*",
-    "http://*/*",
+    "https://*.betrybe.com/*",
+    "http://*.betrybe.com/*",
     "tabs",
     "storage",
     "management"
